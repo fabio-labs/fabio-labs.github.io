@@ -16,6 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 header h1 {
@@ -23,7 +24,6 @@ header h1 {
     font-size: 1.8em;
 }
 
-/* Navegação */
 nav a {
     color: #fff;
     margin-left: 20px;
@@ -32,17 +32,29 @@ nav a {
 }
 
 nav a:hover {
+    color: #00bcd4;
     text-decoration: underline;
+}
+
+/* Banner principal */
+.banner {
+    background-color: #00bcd4;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 1000px;
 }
 
 /* Main */
 main {
-    padding: 40px;
+    padding: 20px 40px;
     max-width: 1000px;
     margin: auto;
 }
 
-/* Seções de projeto */
+/* Cards de projeto */
 .projeto {
     background-color: #fff;
     border-radius: 8px;
@@ -55,6 +67,22 @@ main {
     margin-top: 0;
 }
 
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #33334d;
+}
+
 /* Rodapé */
 footer {
     background-color: #1e1e2f;
@@ -62,20 +90,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-}
-
-/* Botões simples */
-button, .btn {
-    background-color: #1e1e2f;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-button:hover, .btn:hover {
-    background-color: #33334d;
 }
