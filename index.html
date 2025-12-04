@@ -9,14 +9,15 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <h1>Fabio Home Labs</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
+    <h1>Fabio Home Labs</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
 
     <!-- Banner -->
     <div class="banner">
@@ -47,6 +48,14 @@
     <footer>
         <p>&copy; 2025 Fabio Home Labs</p>
     </footer>
+	<script>
+	
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('active');
+}
+</script>
+
 </body>
 </html>
 
